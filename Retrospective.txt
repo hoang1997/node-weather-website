@@ -1,0 +1,33 @@
+Web-Server - What i have learned (Retrospective)
+
+Packages used:
+[1] express
+    -description
+        used to create a webserver to host static content or send JSON objects, 
+        express is a function so when initialising = const app = express(), then use app.get/set/listen/static etc
+    - example
+        main methods = get, set, use, listen
+
+[2] path
+    -description
+        used to find relative path for public files such as css/js/imgs
+    -example
+        const dirPath = path.join(__dirname, '../public')
+        __dirname = gets directory to the app.js file where its called which gives you webserver folder
+        '../public' = gets you to the folder based from __dirname
+
+[3] handlebars (hbs)
+    -description
+        used in conjunction with express to give out dynamic static html, e.g.
+    - example 
+        hbs file
+        <h1>{{name}}</h1>
+
+        express file
+        app.send('/me', (req,res)=>{
+            res.render({
+                name: "Joe"
+            })
+        })
+
+
