@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e)=>{
                 messageOne.textContent = "Error: " + data.error
             } else {
                 messageOne.textContent = "Location: " + data.location
-                messageTwo.textContent = "Forecast: " + data.forecast
+                messageTwo.textContent = "Forecast: " + data.forecast + " The temperature high for today is " + data.dailyHigh + " degrees and temperature low is " + data.dailyLow + " degrees."
             }
         })
     })
