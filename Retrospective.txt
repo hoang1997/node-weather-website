@@ -30,4 +30,13 @@ Packages used:
             })
         })
 
+[4] git (version control)
+    - description
+        version control
+    - example  
+        git add .
+        git commit -m "message"
+        git push
+        git push heroku master
+
 
